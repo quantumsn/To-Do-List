@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <div id="outer">
+        <div id="inner">
+            <h1>To-Do App</h1>
+            <form method="post" action="/">
+                <input type="text" name="data" placeholder="Write your Task....">
+                <button id="button">Add Task</button>
+            </form>
+            <% if(data) { %>
+                <ul>
+                    <% for(let one of data) { %>
+                        <li>
+                            <%= one.data %>
+                                <form method="post" action="/<%= one.id %>?_method=DELETE">
+                                    <button class="btn">Delete</button>
+                                </form>
+                        </li>
+                        <% } %>
+                </ul>
+                <% } %>
+        </div>
+    </div>
+</body>
+
+</html>

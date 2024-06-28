@@ -1,0 +1,74 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: #08040e;
+}
+
+#outer {
+  font-family: "Courier New", Courier, monospace;
+  animation: ani 5s linear infinite;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes ani {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+#inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+}
+
+h1 {
+  color: #7aa2e3;
+  text-align: center;
+}
+
+input {
+  height: 30px;
+  width: 300px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px solid #6ad4dd;
+  outline: none;
+  padding-left: 10px;
+  background-color: inherit;
+}
+
+#button {
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff00;
+  border: 1px solid yellowgreen;
+  color: #5e5e5e;
+}
+
+ul {
+  width: 250px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+ul li .btn {
+  margin-left: 10px;
+  border: none;
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 10px;
+  background-color: #fca1a1;
+  color: #4d1313;
+}
+
+ul li {
+  margin-top: 8px;
+  color: #006300;
+}
