@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, "/public")));
 app.use(methodOverride("_method"));
 
 const sesssionOpts = {
-  secret: "hellobokachodarbara",
+  secret: "helloGuys",
   resave: false,
   saveUninitialized: true,
   cookie: {
